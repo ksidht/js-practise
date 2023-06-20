@@ -7,6 +7,10 @@
    1. delete keyword
    2. configuable object
    3. super
+   4. Object initializer
+   5. for..in and for..of
+   6. static methods
+   7. Enumerability and ownership of properties
 
 */
 
@@ -49,7 +53,10 @@ export default function working_with_objects() {
   }
 
 
-// console.log(person.firstName)
+  console.log(obj)
+  console.log(Object.keys(obj))
+  console.log(Object.values(obj))
+  console.log(Object.entries(obj))
 
 
 
