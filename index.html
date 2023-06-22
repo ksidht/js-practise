@@ -9,5 +9,38 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
+    <script>
+      this.a = "Siddharth"
+       console.log(this)
+       const user = {
+    firstName : "Siddharth",
+    getDetails() {
+      const firstName = "Kamble";
+
+      console.log("user", this)
+
+      function userFun() {
+        console.log("userFun", this)
+      }
+
+      userFun()
+
+      const userSid = {
+
+        firstNameTwo : "Siddharth",
+
+        getDetailsTwo() {
+          console.log("userSid", this)
+        }
+
+      }
+
+      return userSid
+
+    }
+  }
+
+  console.log(user.getDetails().getDetailsTwo())
+    </script>
   </body>
 </html>

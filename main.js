@@ -5,6 +5,7 @@ import { setupCounter } from './counter.js'
 import { substring } from "./substring.js";
 import { map_reduce_filter } from "./src/map_reduce_fliter";
 import working_with_objects from "./working_with_objects";
+import this_keyword from './this_keyword';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -25,9 +26,11 @@ document.querySelector('#app').innerHTML = `
 `
 
 
-working_with_objects()
+// working_with_objects()
 
+this_keyword()
 
+console.log(this)
 
 
 /* map_reduce_filter()
@@ -41,7 +44,7 @@ setupCounter(document.querySelector('#counter'))
 console.log(name);
 var name;
 console.log(name)
-name = "Coforge";
+name = "Siddharth";
 console.log(name);
 
 

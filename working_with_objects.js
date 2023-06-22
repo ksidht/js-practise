@@ -52,6 +52,7 @@ export default function working_with_objects() {
     console.log("SIDD", key, obj[key])
   }
 
+  
 
   console.log(obj)
   console.log(Object.keys(obj))
