@@ -6,6 +6,7 @@ import { substring } from "./substring.js";
 import { map_reduce_filter } from "./src/map_reduce_fliter";
 import working_with_objects from "./working_with_objects";
 import this_keyword from './this_keyword';
+import PromiseStudy from "./src/promise.roadside.js";
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -66,3 +67,8 @@ function sidFunc() {
 sidFunc() 
 
 console.log("sid", sid) */
+
+
+
+
+PromiseStudy()

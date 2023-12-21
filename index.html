@@ -8,39 +8,42 @@
   </head>
   <body>
     <div id="app"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script type="module" src="/main.js"></script>
     <script>
-      this.a = "Siddharth"
-       console.log(this)
-       const user = {
-    firstName : "Siddharth",
-    getDetails() {
-      const firstName = "Kamble";
+      
+  //     this.a = "Siddharth"
+  //      console.log(this)
+  //      const user = {
+  //       firstName : "Siddharth",
+  //       getDetails() {
+  //         const firstName = "Kamble";
 
-      console.log("user", this)
+  //         console.log("user", this)
 
-      function userFun() {
-        console.log("userFun", this)
-      }
+  //         function userFun() {
+  //           console.log("userFun", this)
+  //         }
 
-      userFun()
+  //         userFun()
 
-      const userSid = {
+  //         const userSid = {
 
-        firstNameTwo : "Siddharth",
+  //           firstNameTwo : "Siddharth",
 
-        getDetailsTwo() {
-          console.log("userSid", this)
-        }
+  //           getDetailsTwo() {
+  //             console.log("userSid", this)
+  //           }
 
-      }
+  //         }
 
-      return userSid
+  //         return userSid
 
-    }
-  }
+  //       }
+  // }
 
-  console.log(user.getDetails().getDetailsTwo())
+  // console.log(user.getDetails().getDetailsTwo())
     </script>
   </body>
 </html>

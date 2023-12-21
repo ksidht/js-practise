@@ -40,5 +40,17 @@ export default function this_keyword() {
   // console.log(user.getDetails().getDetailsTwo())
 
 
+  /* QUE 2 */
+
+  function makeuser() {
+    return {
+      name: "John",
+      ref: this
+    }
+  }
+
+  let user = makeuser()
+  console.log(user)
+
 
 }
