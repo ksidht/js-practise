@@ -6,7 +6,8 @@ import { substring } from "./substring.js";
 import { map_reduce_filter } from "./src/map_reduce_fliter";
 import working_with_objects from "./working_with_objects";
 import this_keyword from './this_keyword';
-import PromiseStudy from "./src/promise.roadside.js";
+import PromiseStudy from "./src/promise/promise.roadside.js";
+import AdvancePromise from "./src/promise/advance.promise.js";
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -25,6 +26,9 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
+
+// AdvancePromise()
+PromiseStudy()
 
 
 // working_with_objects()
@@ -70,5 +74,3 @@ console.log("sid", sid) */
 
 
 
-
-PromiseStudy()
