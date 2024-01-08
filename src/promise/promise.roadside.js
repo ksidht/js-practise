@@ -3,7 +3,9 @@ export default function PromiseStudy() {
 
   // callbackImplementation()
 
-  simplePromise()
+  // simplePromise()
+
+  simplePromiseByRoad()
 
 
 }
@@ -114,4 +116,39 @@ function simplePromise() {
 
   console.log(newPromise);
   console.log(newPromise2);
+}
+
+function simplePromiseByRoad() {
+  console.log('srtart simplePromiseByRoad')
+
+  const simplePromise = new Promise((resolve, reject) => {
+    console.log('inside simplePromiseByRoad')
+    setTimeout(() => {
+      console.log('inside setTimeout simplePromiseByRoad')
+      const isOkay = false;
+      if (isOkay) {
+        resolve('It is resolve')
+      }
+  
+      reject('it is reject')
+    })
+
+  })
+
+
+
+  console.log(simplePromise)
+
+
+  simplePromise
+  .then((value) => console.log(value))
+  .catch((error) => console.log(error))
+
+  console.log('end simplePromiseByRoad')
+
+  const staticPromise = Promise.resolve('THis is resolve using static methods')
+
+  staticPromise.then((value) =>  console.log(value))
+  console.log(staticPromise)
+
 }
