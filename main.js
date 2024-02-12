@@ -33,9 +33,9 @@ PromiseStudy()
 
 // working_with_objects()
 
-this_keyword()
+// this_keyword()
 
-console.log(this)
+// console.log(this)
 
 
 /* map_reduce_filter()

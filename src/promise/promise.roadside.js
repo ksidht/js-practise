@@ -5,7 +5,11 @@ export default function PromiseStudy() {
 
   // simplePromise()
 
-  simplePromiseByRoad()
+  // simplePromiseByRoad()
+
+  // callbackToPromise()
+
+  outPutQuestions()
 
 
 }
@@ -41,7 +45,7 @@ function callbackImplementation() {
     setTimeout(() => {
       const result = num + 2;
       cb(result)
-    })
+    }, 2000)
   }
 
   function doStep3(num, cb) {
@@ -57,11 +61,13 @@ function callbackImplementation() {
   function doOperation () {
     let result = 0;
     doStep1(result, (result1) => {
-      console.log('console log from',result1)
+      console.log('1 -- console log from')
       doStep2(result1, (result2) => {
+        console.log('2 -- console log from')
         doStep3(result2, (result3) => {
+          console.log('3 -- console log from')
           doStep4(result3, (result4) => {
-            console.log('log from 4', result4)
+            console.log('4 -- log from 4', result4)
           })
         })
       })
@@ -151,4 +157,129 @@ function simplePromiseByRoad() {
   staticPromise.then((value) =>  console.log(value))
   console.log(staticPromise)
 
+}
+
+function callbackToPromise() {
+  function doStep1(num) {
+    return new Promise((resolve, reject) => {
+      resolve(num + 1)
+    })
+  }
+
+  function doStep2(num) {
+    return new Promise((resolve, reject) => {
+      resolve(num + 1)
+    })
+  }  
+
+  function doStep3(num) {
+    return new Promise((resolve, reject) => {
+      resolve(num + 1)
+    })
+  }    
+
+  function doStep4(num) {
+    return new Promise((resolve, reject) => {
+      resolve(num + 1)
+    })
+  }    
+
+  doStep1(1).then(result => {
+    console.log(result)
+
+    doStep2(result).then((result) => {
+      console.log(result)
+
+      doStep3(result).then(result => {
+        console.log(result)
+
+        doStep4(result).then(result => {
+          console.log(result)
+        })
+      })
+    })
+  })
+
+  doStep1(10).then( result => {
+    console.log(result)
+    return doStep2(result)
+  }).then(result => {
+    console.log(result)
+    return doStep3(result)
+  }).then(result => {
+    console.log(result)
+    return doStep3(result)
+  }).then(result => {
+    console.log(result)
+  })
+
+}
+
+function outPutQuestions() {
+  function question1() {
+    console.log('start')
+
+    const promise1 = new Promise((resolve, reject) => {
+      console.log(1);
+      resolve(2)
+    })
+
+    promise1.then((res) => {
+      console.log(res)
+    })
+
+    console.log('end')
+
+    /* 
+    * start, 1, end, 2
+    */
+  }
+
+  /* 
+  * console log after resolve
+  * resolve after resolve 
+  * no resolve or reject 
+  * use of return in promise callback
+  */
+  function question2() {
+    console.log('start')
+
+    const promise1 = new Promise((resolve, reject) => {
+      console.log(1);
+      resolve(2)
+      console.log(3)
+      // reject('resolve'+4)
+      return 'sid'
+    })
+
+    promise1.then((res) => {
+      console.log('Res', res)
+    })
+    .then((res) => {
+      console.log('Res2', res)
+    })
+    .then((res) => {
+      console.log('Res3', res)
+    })
+    .catch((error) => {
+      console.log('error', error)
+    })
+    .then((res) => {
+      console.log('Res4', res)
+    })    
+    .then((res) => {
+      console.log('Res5', res)
+    })      
+    console.log('end')
+
+    /* 
+    * start, 1, end, 2
+    */
+  }  
+
+
+  
+
+  // question1()
+  question2()
 }
