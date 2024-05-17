@@ -9,6 +9,8 @@ import this_keyword from './this_keyword';
 import PromiseStudy from "./src/promise/promise.roadside.js";
 import AdvancePromise from "./src/promise/advance.promise.js";
 
+import { StringBasic } from "./src/excercise/index.js";
+
 document.querySelector('#app').innerHTML = `
   <div>
     <h1>Hello Vorld</h1>
@@ -22,8 +24,9 @@ document.querySelector('#app').innerHTML = `
 `
 
 // AdvancePromise()
-PromiseStudy()
+// PromiseStudy()
 
+StringBasic.occuranceOfEachCharacter()
 
 // working_with_objects()
 
