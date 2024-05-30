@@ -9,6 +9,8 @@ import this_keyword from './this_keyword';
 import PromiseStudy from "./src/promise/promise.roadside.js";
 import AdvancePromise from "./src/promise/advance.promise.js";
 
+import Sorting from './src/dsa/sorting.js';
+
 document.querySelector('#app').innerHTML = `
   <div>
     <h1>Hello Vorld</h1>
@@ -22,7 +24,9 @@ document.querySelector('#app').innerHTML = `
 `
 
 // AdvancePromise()
-PromiseStudy()
+// PromiseStudy()
+
+Sorting()
 
 
 // working_with_objects()
