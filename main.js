@@ -9,8 +9,10 @@ import this_keyword from './this_keyword';
 import PromiseStudy from "./src/promise/promise.roadside.js";
 import AdvancePromise from "./src/promise/advance.promise.js";
 
-import Sorting from './src/dsa/sorting.js';
+import {Sorting} from './src/dsa/index.js';
 import { StringBasic } from "./src/excercise/index.js";
+import { Functions } from "./src/functions/index.js";
+
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -27,7 +29,13 @@ document.querySelector('#app').innerHTML = `
 // AdvancePromise()
 // PromiseStudy()
 
-StringBasic.occuranceOfEachCharacter()
+// StringBasic.flatternArray()
+
+// Sorting.bubbleSortOptimise()
+
+Functions.iife()
+
+
 
 // working_with_objects()
 
