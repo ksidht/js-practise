@@ -13,6 +13,7 @@ import {Sorting} from './src/dsa/index.js';
 import { StringBasic } from "./src/excercise/index.js";
 import { Functions } from "./src/functions/index.js";
 
+import { Objects } from './src/roadsider/index.js';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -33,7 +34,7 @@ document.querySelector('#app').innerHTML = `
 
 // Sorting.bubbleSortOptimise()
 
-Functions.iife()
+Objects.objectCreation()
 
 
 
