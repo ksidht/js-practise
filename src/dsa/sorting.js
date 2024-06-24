@@ -47,3 +47,28 @@ export function bubbleSortOptimise() {
   console.log(data)
 
 }
+
+export function bubbleSortPractise() {
+  const ary = [0, 3, 2, 1, 5, 4]
+
+  let isSwaped
+
+  do {
+    isSwaped = false
+
+    for(let i = 0; i < ary.length - 1; i++) {
+      console.log('run')
+      if (ary[i] > ary[i+1]) {
+        const temp = ary[i+1]
+        ary[i+1] = ary[i]
+        ary[i] = temp
+
+        isSwaped = true
+      }
+    }
+
+  } while (isSwaped);
+  
+  console.log(ary)
+  
+}

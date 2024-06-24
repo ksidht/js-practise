@@ -15,6 +15,7 @@ import { Functions } from "./src/functions/index.js";
 
 import { Objects } from './src/roadsider/index.js';
 
+
 document.querySelector('#app').innerHTML = `
   <div>
     <h1>Hello Vorld</h1>
@@ -32,9 +33,9 @@ document.querySelector('#app').innerHTML = `
 
 // StringBasic.flatternArray()
 
-// Sorting.bubbleSortOptimise()
+Sorting.bubbleSortPractise()
 
-Objects.objectCreation()
+// Objects.objectCreation()
 
 
 
