@@ -9,11 +9,14 @@ import this_keyword from './this_keyword';
 import PromiseStudy from "./src/promise/promise.roadside.js";
 import AdvancePromise from "./src/promise/advance.promise.js";
 
-import {Sorting} from './src/dsa/index.js';
-import { StringBasic } from "./src/excercise/index.js";
+import {Sorting, Search, MergeSort} from './src/dsa/index.js';
+import { StringBasic, Amla } from "./src/excercise/index.js";
 import { Functions } from "./src/functions/index.js";
 
 import { Objects } from './src/roadsider/index.js';
+
+import { TraversyRecurssion } from "./src/traversy/index.js";
+
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -34,7 +37,13 @@ document.querySelector('#app').innerHTML = `
 
 // Sorting.bubbleSortOptimise()
 
-Objects.objectCreation()
+// StringBasic.objectSort()
+
+// MergeSort.mergeSort()
+
+Amla.uniqueArray()
+
+// TraversyRecurssion.reverseString()
 
 
 

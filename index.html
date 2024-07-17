@@ -8,6 +8,9 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <div class="name">Siddharth</div>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script type="module" src="/main.js"></script>
@@ -68,5 +71,66 @@
     // console.log(1 in langObj)
 
     </script>
+    <script>
+      const people  = [
+          {
+              name: 'john',
+              age: 12,
+              gender: 'male'
+          },
+          {
+              name: 'jane',
+              age: 15,
+              gender: 'female'
+          },
+          {
+              name: 'julie',
+              age: 24,
+              gender: 'trans'
+          },
+          {
+              name: 'john',
+              age: 11,
+              gender: 'male'
+          },
+          {
+              name: 'jane',
+              age: 16,
+              gender: 'female'
+          },
+          {
+              name: 'jenna',
+              age: 20,
+              gender: 'trans'
+          }
+      ]
+      
+      const counted = {}
+
+      for(let person of people) {
+        counted[person.name] = (counted[person.name] ? counted[person.name] : 0) + 1
+      }
+
+      console.log(counted)
+
+      let uniquePersons = []
+
+      for(let key in counted) {
+        if (counted[key] == 1) {
+          let uniP = people.find((person) => {
+            if(person.name == key) {
+              return person
+            }
+          })
+
+          uniquePersons.push(uniP)
+        }
+      }
+
+      console.log(uniquePersons)
+
+
+    </script>
+
   </body>
 </html>

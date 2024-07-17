@@ -24,3 +24,38 @@ export function flatternArray() {
   console.log(flatAry)
 
 }
+
+export function objectSort() {
+  console.log('object Sort')
+
+  
+const fruits = [ { fruit : "Oranage" }, { fruit : "Apple" }, { fruit : "Jackfruit" }, { fruit : "Banana" }]
+
+// let fruitsAry = []
+
+// for(let fruit of fruits) {
+//   fruitsAry.push(fruit.fruit)
+// }
+
+// const sortFruitsAry = fruitsAry.sort()
+
+// const sortedFruits = []
+
+// for(let sfruit of fruitsAry) {
+//   sortedFruits.push({
+//     fruit: sfruit
+//   })
+// }
+
+// console.log(sortedFruits)
+
+
+fruits.sort((a, b) => {
+  console.log(a.fruit, b)
+  console.log(a.fruit.localeCompare(b.fruit))
+})
+
+
+
+
+}
