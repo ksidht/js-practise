@@ -35,7 +35,7 @@ document.querySelector('#app').innerHTML = `
 
 // StringBasic.flatternArray()
 
-// Sorting.bubbleSortOptimise()
+Sorting.bubbleSortPractise()
 
 // StringBasic.objectSort()
 
@@ -44,6 +44,7 @@ document.querySelector('#app').innerHTML = `
 Amla.uniqueArray()
 
 // TraversyRecurssion.reverseString()
+// Objects.objectCreation()
 
 
 
